@@ -1,0 +1,131 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    font-family: 'Quicksan', sans-serif;
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+  }
+  h1{
+    color:rgb(199, 176, 146);
+    font-size: 30px;
+  }
+
+  h1 img{
+    height: 43px;
+    width: 43px;
+  }
+
+  h1:hover{ 
+    background: #72dacc;
+    box-shadow: 0 0 10px #72dacc, 0 0 40px #72dacc, 0 0 80px #72dacc; 
+    border-radius: 10%;
+  }
+
+  ul li{
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+
+  a:hover{ 
+    background: #72dacc;
+    box-shadow: 0 0 10px #72dacc, 0 0 40px #72dacc, 0 0 80px #72dacc; 
+    border-radius: 50%;
+  }
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .card{
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: #201b1b;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 0.75s;
+  }
+
+  .card:hover{
+     transform: perspective(2000px) rotate(-5deg);
+  }
+
+  .card .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 0.75s;
+  }
+
+  .card:hover .imgbox{
+    transform: rotateY(-130deg);
+  }
+
+  .card .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 25px;
+    color:aliceblue;
+    font-family: cursive;
+    
+  }
+
+  .card .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+  }
+
+  .card .content p{
+    margin-top: 10px;
+    line-height: 1.5em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
